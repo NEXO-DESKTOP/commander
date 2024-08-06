@@ -1,0 +1,23 @@
+@font-face {
+    font-family: SpaceMono;
+    src: url(fonts/SpaceMono.ttf) format('truetype');
+}
+main{
+    display: flex;
+    flex-direction: column;
+    font-family: SpaceMono;
+    text-align: left;
+    flex: 1;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    outline: none;
+    user-select: all;
+    -webkit-user-select: all;
+    -webkit-touch-callout: all;
+
+    
+}
+
+.input-line {
+    display: inline;
+  }

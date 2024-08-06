@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>NeutralinoJs sample app</title>
     <link rel="stylesheet" href="/nexo.css">
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
     <div id="appBar">
 
       <div id="windowLeftSector">
-        <button id="newWin"><span class="sIcons">add</span>
+        <button id="newWin" class="barButton"><span class="sIcons">add</span>
         </button>
       </div>
 
@@ -18,9 +19,11 @@
       </div>
 
       <div id="windowRightSector">
-        <button id="IeRBtn"><span class="sIcons">chat</span>
+        <button id="IeRBtn" class="barButton"><span class="sIcons">chat</span>
 
-        <button id="menuBtn"><span class="sIcons">menu</span>
+        <button id="pinBtn" class="barButton"><span class="sIcons">keep</span>
+
+        <button id="menuBtn" class="barButton"><span class="sIcons">menu</span>
 
       </div>
 
@@ -35,7 +38,21 @@
       <button id="closebtn"><span class="sIcons">close</span></button>
   
     </div>
+
+    <div class="context-menu" id="context-menu">
+      <ul>
+          <li class="context-menu-item">Opción 1</li>
+          <li class="context-menu-item">Opción 2</li>
+          <li class="context-menu-item">Opción 3</li>
+      </ul>
+  </div>
+
+
+
+    <main id="terminal" contenteditable="true">
+    </main>
     <script src="/js/neutralino.js"></script>
     <script src="/system.js"></script>
+    <script src="/js/terminal.js"></script>
   </body>
 </html>
